@@ -1,0 +1,72 @@
+.tech-banner {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-banner h2 {
+    color: #00204A;
+    font-family: Inter;
+    font-size: 39.81px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Desktop layout */
+.icons-coll {
+    height: 63px;
+    display: flex;
+    gap: 117px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.icons-coll img {
+    height: 100%;
+    padding-right: 30px;
+    border-right: 1px solid rgba(128, 128, 128, 0.5);
+    object-fit: contain;
+}
+
+.icons-coll img:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+/* Swiper mobile layout */
+.swiper-wrapper-mobile {
+    width: 100%;
+    padding: 0 20px;
+    padding-bottom: 15px;
+}
+
+.tech-logo {
+    height: 50px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Hide/show sections */
+.desktop-only {
+    display: flex;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* Responsive switches */
+@media (max-width: 1023px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .tech-banner h2 {
+        font-size: 28px;
+    }
+}

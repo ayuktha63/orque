@@ -1,0 +1,12 @@
+.wrapper {
+    max-width: 1440px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Ensure wrapper stays within viewport on all screens */
+@media (max-width: 1023px) {
+    .wrapper {
+        max-width: 100%;
+    }
+}
