@@ -15,7 +15,7 @@ const App = () => {
         <div className="wrapper">
             <Helmet>
                 {/* Basic SEO */}
-                <title>Orque Innovations | Custom Software Solutions for Every Industry</title>
+                <title>Orque Innovations</title>
                 <meta name="description" content="Orque Innovations offers tailored software solutions for startups, enterprises, and everything in between. Empower your business with cutting-edge tech." />
                 <meta name="keywords" content="software development, custom software, tech company, Orque Innovations, web apps, mobile apps, SaaS solutions, IT services, btech projects, Orque Solutions" />
                 <meta name="robots" content="index, follow" />
