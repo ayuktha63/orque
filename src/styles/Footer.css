@@ -76,6 +76,7 @@
         justify-content: space-between;
         align-items: left;
         margin-left: 80px;
+        padding-bottom: 20px;
     }
     .last-footer p {
         color: white;

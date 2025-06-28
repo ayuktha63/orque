@@ -6,26 +6,29 @@
     background: #FFF;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 67px 16px 80px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 10;
 }
-.logo {
-width: 156px;
-height: 41px;
-background: url("images/logo copy.png") no-repeat center center;
-background-size: contain;
 
+.logo {
+    width: 156px;
+    height: auto;
+    object-fit: contain;
 }
+
 .container {
     display: flex;
     gap: 50px;
     align-items: center;
 }
+
 .href {
     display: flex;
     gap: 50px;
 }
+
 .links {
     color: #000;
     font-size: 16px;
@@ -34,6 +37,7 @@ background-size: contain;
     position: relative;
     transition: color 0.3s ease-in-out;
 }
+
 .links::after {
     content: '';
     position: absolute;
@@ -46,13 +50,16 @@ background-size: contain;
     transform-origin: bottom right;
     transition: transform 0.3s ease-in-out;
 }
+
 .links:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 .links:hover {
     color: #000;
 }
+
 .talk1 {
     position: relative;
     overflow: hidden;
@@ -68,6 +75,7 @@ background-size: contain;
     z-index: 1;
     transition: color 0.3s ease;
 }
+
 .talk1::before {
     content: "";
     position: absolute;
@@ -79,12 +87,15 @@ background-size: contain;
     z-index: -1;
     transition: width 0.4s ease;
 }
+
 .talk1:hover::before {
     width: 100%;
 }
+
 .talk1:hover {
     color: #00204A;
 }
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -94,35 +105,40 @@ background-size: contain;
     cursor: pointer;
     z-index: 11;
 }
+
 .hamburger span {
     width: 100%;
     height: 3px;
     background: #00204A;
     transition: all 0.3s ease;
 }
+
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(7px, 7px);
 }
+
 .hamburger.active span:nth-child(2) {
     opacity: 0;
 }
+
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Tablet screens (481px to 1024px) */
+/* Tablet (481px to 1024px) */
 @media screen and (max-width: 1024px) {
     .header {
         padding: 15px 30px;
     }
+
     .logo {
         width: 120px;
-        height: 31px;
-        background-size: cover;
     }
+
     .container {
         gap: 20px;
     }
+
     .href {
         position: absolute;
         top: 100%;
@@ -136,39 +152,45 @@ background-size: contain;
         transition: transform 0.3s ease-in-out;
         z-index: 10;
     }
+
     .href.active {
         transform: translateX(0);
     }
+
     .href .links {
         font-size: 18px;
         padding: 10px 0;
     }
+
     .talk1 {
         width: 100%;
         text-align: center;
     }
+
     .hamburger {
         display: flex;
     }
 }
 
-/* Mobile screens (up to 480px) */
+/* Mobile (up to 480px) */
 @media screen and (max-width: 480px) {
     .header {
         padding: 10px 20px;
     }
+
     .logo {
         width: 100px;
-        height: 26px;
-        background-size: cover;
     }
+
     .href {
         padding: 15px;
     }
+
     .href a {
         font-size: 16px;
         padding: 8px 0;
     }
+
     .talk1 {
         font-size: 12px;
         padding: 8px 20px;

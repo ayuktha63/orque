@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <div className="header">
-            <div className="logo"></div>
+            <img src="/images/logo copy.png" alt="Logo" className="logo" />
             <div className="container">
                 <div className={`href ${isMenuOpen ? 'active' : ''}`}>
                     <a href="#Home" onClick={toggleMenu} className='links'>Home</a>
@@ -28,4 +28,5 @@ function Header() {
         </div>
     );
 }
+
 export default Header;
