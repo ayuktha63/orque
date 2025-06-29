@@ -10,10 +10,10 @@
                 </div>
                 <div className="section3-bottom">
                     <div className="section3-img">
-                        <img src="/images/section3.png" alt="" loading="lazy" />
-                        <img src="/images/section3.png" alt="" loading="lazy" />
-                        <img src="/images/section3.png" alt="" loading="lazy" />
-                        <img src="/images/section3.png" alt="" loading="lazy" />
+                        <img src="/images/section3.webp" alt="" loading="lazy" />
+                        <img src="/images/section3.webp" alt="" loading="lazy" />
+                        <img src="/images/section3.webp" alt="" loading="lazy" />
+                        <img src="/images/section3.webp" alt="" loading="lazy" />
                     </div>
                     <div className="section3-content">
                         <div className="section3-right">

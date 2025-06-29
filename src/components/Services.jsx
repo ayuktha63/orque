@@ -23,7 +23,7 @@ function Services() {
                     <div className="sections">
                         <h4>Website Development</h4>
                         <img
-                            src="/images/triangle.png"
+                            src="/images/triangle.webp"
                             className={`toggle-btn ${openIndex === 0 ? 'rotated' : ''}`}
                             onClick={() => toggleAccordion(0)}
                             alt="toggle"
@@ -41,7 +41,7 @@ function Services() {
                     <div className="sections">
                         <h4>Artificial Intelligence</h4>
                         <img
-                            src="/images/triangle.png"
+                            src="/images/triangle.webp"
                             className={`toggle-btn ${openIndex === 1 ? 'rotated' : ''}`}
                             onClick={() => toggleAccordion(1)}
                             alt="toggle"
@@ -59,7 +59,7 @@ function Services() {
                     <div className="sections">
                         <h4>Software Development</h4>
                         <img
-                            src="/images/triangle.png"
+                            src="/images/triangle.webp"
                             className={`toggle-btn ${openIndex === 2 ? 'rotated' : ''}`}
                             onClick={() => toggleAccordion(2)}
                             alt="toggle"
@@ -78,7 +78,7 @@ function Services() {
             </div>
             <div className="right-section2">
                 <h2>Our Services</h2>
-                <img src="/images/services.png" alt="services" loading="lazy" />
+                <img src="/images/services.webp" alt="services" loading="lazy" />
             </div>
         </section>
     );

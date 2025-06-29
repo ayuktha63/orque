@@ -19,7 +19,7 @@ function Footer() {
             <div className="footer-content">
                 {isLargeScreen && (
                     <div className="footer-left">
-                        <img src="images/logo.png" alt="Orque Logo" />
+                        <img src="images/logo.webp" alt="Orque Logo" />
                         <p>Empowering businesses with cutting-edge software solutions</p>
                     </div>
                 )}

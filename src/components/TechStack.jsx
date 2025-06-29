@@ -7,11 +7,11 @@ import '../styles/TechStack.css';
 
 function TechStack() {
     const techLogos = [
-        { src: '/images/flutter.png', alt: 'Flutter' },
-        { src: '/images/firebase.png', alt: 'Firebase' },
-        { src: '/images/python.png', alt: 'Python' },
-        { src: '/images/figma.png', alt: 'Figma' },
-        { src: '/images/tf.png', alt: 'TensorFlow' }
+        { src: '/images/flutter.webp', alt: 'Flutter' },
+        { src: '/images/firebase.webp', alt: 'Firebase' },
+        { src: '/images/python.webp', alt: 'Python' },
+        { src: '/images/figma.webp', alt: 'Figma' },
+        { src: '/images/tf.webp', alt: 'TensorFlow' }
     ];
 
     return (
