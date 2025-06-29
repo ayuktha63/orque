@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // ⬅️ Import Link for routing
 import '../styles/Footer.css';
 
 function Footer() {
@@ -18,29 +19,29 @@ function Footer() {
             <div className="footer-content">
                 {isLargeScreen && (
                     <div className="footer-left">
-                        <img src="images/logo.png" alt="" />
+                        <img src="images/logo.png" alt="Orque Logo" />
                         <p>Empowering businesses with cutting-edge software solutions</p>
                     </div>
                 )}
                 <div className="footer-right">
                     <div className="first">
                         <p>Useful Links</p>
-                        <a href="#Home">Home</a>
+                        <Link to="/" className="link">Home</Link>
                         <a href="#Company">Company</a>
                         <a href="#Services">Service</a>
-                        <a href="#Contact">Contact</a>
+                        <Link to="/contact" className="link">Contact</Link>
                     </div>
                     <div className="second">
                         <p>Support</p>
-                        <a href="#Privacy Policy">Privacy Policy</a>
-                        <a href="#Terms & Conditions">Terms & Conditions</a>
+                        <a href="#PrivacyPolicy">Privacy Policy</a>
+                        <a href="#Terms">Terms & Conditions</a>
                         <a href="#FAQ">FAQ</a>
                     </div>
                     <div className="third">
                         <p>Find Us</p>
                         <p>Mon - Sat : 8am - 9pm</p>
                         <p>Thiruvananthapuram</p>
-                        <p>E-mail</p>
+                        <p>Email</p>
                         <p>orquesolutions@gmail.com</p>
                     </div>
                 </div>

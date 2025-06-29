@@ -52,7 +52,7 @@
         font-weight: 600;
         margin-bottom: 10px;
     }
-    .first a, .second a, .third a {
+    .first a, .second a, .third a,.link{
         color: #808080;
         font-family: Inter, sans-serif;
         font-size: 16px;
@@ -60,7 +60,7 @@
         text-decoration: none;
         transition: color 0.3s ease, transform 0.3s ease;
     }
-    .first a:hover, .second a:hover, .third a:hover {
+    .first a:hover, .second a:hover, .third a:hover ,.link:hover{
         color: #FFFFFF;
         transform: translateX(5px);
     }
