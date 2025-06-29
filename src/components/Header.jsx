@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <div className="header">
-      <img src="src/assets/images/logo copy.png" alt="Logo" className="logo" loading="lazy" />
+      <img src="/images/logo copy.png" alt="Logo" className="logo" loading="lazy" />
       <div className="container">
         <div className={`href ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/" onClick={toggleMenu} className="links">Home</Link>
