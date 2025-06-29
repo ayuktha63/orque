@@ -23,10 +23,11 @@ function Services() {
                     <div className="sections">
                         <h4>Website Development</h4>
                         <img
-                            src="images/triangle.png"
+                            src="src/assets/images/triangle.png"
                             className={`toggle-btn ${openIndex === 0 ? 'rotated' : ''}`}
                             onClick={() => toggleAccordion(0)}
                             alt="toggle"
+                            loading="lazy" 
                         />
                     </div>
                     <div className={`accordion-content ${openIndex === 0 ? 'open' : ''}`}>
@@ -40,10 +41,11 @@ function Services() {
                     <div className="sections">
                         <h4>Artificial Intelligence</h4>
                         <img
-                            src="images/triangle.png"
+                            src="src/assets/images/triangle.png"
                             className={`toggle-btn ${openIndex === 1 ? 'rotated' : ''}`}
                             onClick={() => toggleAccordion(1)}
                             alt="toggle"
+                            loading="lazy" 
                         />
                     </div>
                     <div className={`accordion-content ${openIndex === 1 ? 'open' : ''}`}>
@@ -57,10 +59,11 @@ function Services() {
                     <div className="sections">
                         <h4>Software Development</h4>
                         <img
-                            src="images/triangle.png"
+                            src="src/assets/images/triangle.png"
                             className={`toggle-btn ${openIndex === 2 ? 'rotated' : ''}`}
                             onClick={() => toggleAccordion(2)}
                             alt="toggle"
+                            loading="lazy" 
                         />
                     </div>
                     <div className={`accordion-content ${openIndex === 2 ? 'open' : ''}`}>
@@ -75,7 +78,7 @@ function Services() {
             </div>
             <div className="right-section2">
                 <h2>Our Services</h2>
-                <img src="images/services.png" alt="services" />
+                <img src="src/assets/images/services.png" alt="services" loading="lazy" />
             </div>
         </section>
     );

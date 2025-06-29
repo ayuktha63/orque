@@ -28,7 +28,7 @@ function Footer() {
                         <p>Useful Links</p>
                         <Link to="/" className="link">Home</Link>
                         <a href="#Company">Company</a>
-                        <a href="#Services">Service</a>
+                        <a href="/#Services">Service</a>
                         <Link to="/contact" className="link">Contact</Link>
                     </div>
                     <div className="second">

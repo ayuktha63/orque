@@ -7,11 +7,11 @@ import '../styles/TechStack.css';
 
 function TechStack() {
     const techLogos = [
-        { src: 'images/flutter.png', alt: 'Flutter' },
-        { src: 'images/firebase.png', alt: 'Firebase' },
-        { src: 'images/python.png', alt: 'Python' },
-        { src: 'images/figma.png', alt: 'Figma' },
-        { src: 'images/tf.png', alt: 'TensorFlow' }
+        { src: 'src/assets/images/flutter.png', alt: 'Flutter' },
+        { src: 'src/assets/images/firebase.png', alt: 'Firebase' },
+        { src: 'src/assets/images/python.png', alt: 'Python' },
+        { src: 'src/assets/images/figma.png', alt: 'Figma' },
+        { src: 'src/assets/images/tf.png', alt: 'TensorFlow' }
     ];
 
     return (
@@ -40,7 +40,7 @@ function TechStack() {
                 >
                     {techLogos.map((logo, index) => (
                         <SwiperSlide key={index}>
-                            <img src={logo.src} alt={logo.alt} className="tech-logo" />
+                            <img src={logo.src} alt={logo.alt} className="tech-logo" loading="lazy" />
                         </SwiperSlide>
                     ))}
                 </Swiper>

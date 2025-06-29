@@ -52,7 +52,7 @@
   border: 1px solid #00204A;
   border-radius: 4px;
   font-size: 16px;
-  height: 120px;     /* Taller than input */
+  height: 220px;
   resize: none;      /* Disable resizing */
   overflow: auto;
   box-sizing: border-box;

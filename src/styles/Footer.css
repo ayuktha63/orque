@@ -3,6 +3,7 @@
         display: flex;
         flex-direction: column;
     }
+
     .footer-content {
         margin-left: 80px;
         margin-right: 80px;
@@ -18,15 +19,18 @@
         color: #FFFFFF;
         border-bottom: 2px solid white;
     }
+
     .footer-left {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
+
     .footer-left img {
         width: 212px;
         height: 70px;
     }
+
     .footer-left p {
         color: #D3D3D3;
         font-family: Inter, sans-serif;
@@ -35,24 +39,34 @@
         line-height: 24px;
         max-width: 300px;
     }
+
     .footer-right {
         display: flex;
         flex-direction: row;
         gap: 60px;
     }
-    .first, .second {
+
+    .first,
+    .second {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
-    .first p, .second p, .third p {
+
+    .first p,
+    .second p,
+    .third p {
         color: #FFFFFF;
         font-family: Inter, sans-serif;
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 10px;
     }
-    .first a, .second a, .third a,.link{
+
+    .first a,
+    .second a,
+    .third a,
+    .link {
         color: #808080;
         font-family: Inter, sans-serif;
         font-size: 16px;
@@ -60,16 +74,22 @@
         text-decoration: none;
         transition: color 0.3s ease, transform 0.3s ease;
     }
-    .first a:hover, .second a:hover, .third a:hover ,.link:hover{
+
+    .first a:hover,
+    .second a:hover,
+    .third a:hover,
+    .link:hover {
         color: #FFFFFF;
         transform: translateX(5px);
     }
+
     .third p:not(:first-child) {
         color: #D3D3D3;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
     }
+
     .last-footer {
         display: flex;
         width: 1278px;
@@ -78,79 +98,85 @@
         margin-left: 80px;
         padding-bottom: 20px;
     }
+
     .last-footer p {
         color: white;
     }
-/* Tablet screens (481px to 1024px) */
-@media screen and (max-width: 1024px) {
-    .footer-content {
-        flex-direction: column;
-        gap: 40px;
-        margin: 0 40px;
-        align-items: flex-start;
+
+    /* Tablet screens (481px to 1024px) */
+    @media screen and (max-width: 1024px) {
+        .footer-content {
+            flex-direction: column;
+            gap: 40px;
+            margin: 0 40px;
+            align-items: flex-start;
+        }
+
+        .footer-right {
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        .last-footer {
+            width: auto;
+            flex-direction: column;
+            gap: 10px;
+            margin: 0 40px 20px;
+            align-items: flex-start;
+        }
+
+        .footer-left p,
+        .third p:not(:first-child) {
+            max-width: 100%;
+        }
     }
 
-    .footer-right {
-        flex-direction: row;
-        gap: 40px;
-    }
+    /* Mobile screens (up to 480px) */
+    @media screen and (max-width: 480px) {
+        .footer-content {
+            margin: 0 20px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            gap: 30px;
+        }
 
-    .last-footer {
-        width: auto;
-        flex-direction: column;
-        gap: 10px;
-        margin: 0 40px 20px;
-        align-items: flex-start;
-    }
+        .footer-right {
+            flex-direction: column;
+            gap: 30px;
+        }
 
-    .footer-left p,
-    .third p:not(:first-child) {
-        max-width: 100%;
-    }
-}
+        .footer-left img {
+            width: 150px;
+            height: auto;
+        }
 
-/* Mobile screens (up to 480px) */
-@media screen and (max-width: 480px) {
-    .footer-content {
-        margin: 0 20px;
-        padding-top: 40px;
-        padding-bottom: 20px;
-        gap: 30px;
-    }
+        .footer-left p,
+        .third p:not(:first-child) {
+            font-size: 14px;
+            line-height: 22px;
+        }
 
-    .footer-right {
-        flex-direction: column;
-        gap: 30px;
-    }
+        .first p,
+        .second p,
+        .third p {
+            font-size: 16px;
+        }
 
-    .footer-left img {
-        width: 150px;
-        height: auto;
-    }
+        .first a,
+        .second a,
+        .third a {
+            font-size: 14px;
+        }
 
-    .footer-left p,
-    .third p:not(:first-child) {
-        font-size: 14px;
-        line-height: 22px;
-    }
+        .last-footer {
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 20px 20px;
+            gap: 10px;
+            width: auto;
+        }
 
-    .first p, .second p, .third p {
-        font-size: 16px;
+        .last-footer p {
+            font-size: 14px;
+        }
     }
-
-    .first a, .second a, .third a {
-        font-size: 14px;
-    }
-
-    .last-footer {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0 20px 20px;
-        gap: 10px;
-        width: auto;
-    }
-
-    .last-footer p {
-        font-size: 14px;
-    }
-}

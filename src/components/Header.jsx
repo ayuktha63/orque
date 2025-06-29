@@ -11,13 +11,13 @@ function Header() {
 
   return (
     <div className="header">
-      <img src="/images/logo copy.png" alt="Logo" className="logo" />
+      <img src="src/assets/images/logo copy.png" alt="Logo" className="logo" loading="lazy" />
       <div className="container">
         <div className={`href ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/" onClick={toggleMenu} className="links">Home</Link>
           <a href="#Company" onClick={toggleMenu} className="links">Company</a>
           <Link to="/contact" onClick={toggleMenu} className="links">Contact</Link>
-          <a href="#Services" onClick={toggleMenu} className="links">Services</a>
+          <a href="/#Services" onClick={toggleMenu} className="links">Services</a>
         </div>
         <button className="talk1 desktop-only">Let’s Talk</button>
         <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>

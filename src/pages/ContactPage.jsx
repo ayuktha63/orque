@@ -40,7 +40,7 @@ const ContactPage = () => {
             ></iframe>
 
             <div className="contact-info-box">
-              <p><strong>Address:</strong> First Floor, Gayatri Building, Technopark Campus, Thiruvananthapuram, Kerala, Pin: 695581</p>
+              <p><strong>Address:</strong> SS Kovil Road, Thambanoor, Kumli Lane, Thiruvananthapuram, Kerala, Pin: 695001</p>
               <p><strong>Phone:</strong> +91 70122 56258</p>
               <p><strong>Email:</strong> orquesolutions@gmail.com</p>
             </div>
