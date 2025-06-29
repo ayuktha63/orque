@@ -17,7 +17,6 @@
     height: auto;
     object-fit: contain;
 }
-
 .container {
     display: flex;
     gap: 50px;

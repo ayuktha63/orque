@@ -15,7 +15,7 @@ function ContactBanner() {
                 <p>
                     We design and develop custom software, intelligent AI systems, and modern websites that help businesses scale and innovate. Whether you're starting from scratch or improving an existing solution, we’ll craft a tailored approach to bring your vision to life.
                 </p>
-                <a href="#contact" className="contact-btn">
+                <a href="/contact" className="contact-btn">
                     <FiPhoneCall size={20} />
                     <span>Contact Us</span>
                 </a>

@@ -24,24 +24,24 @@
                             </p>
                         </div>
                         <div className="section3-right">
-                            <p className="no">01</p>
-                            <h6>Quality-Driven Delivery</h6>
+                            <p className="no">02</p>
+                            <h6>Problem-Solving Mindset</h6>
                             <p className="para">
-                                We prioritize performance, scalability, and clean code in every project.
+                                We create solutions that are purpose-built to solve real challenges.
                             </p>
                         </div>
                         <div className="section3-right">
-                            <p className="no">01</p>
-                            <h6>Quality-Driven Delivery</h6>
+                            <p className="no">03</p>
+                            <h6>Agile & Transparent</h6>
                             <p className="para">
-                                We prioritize performance, scalability, and clean code in every project.
+                                We follow agile methods with regular updates and collaborative feedback.
                             </p>
                         </div>
                         <div className="section3-right">
-                            <p className="no">01</p>
-                            <h6>Quality-Driven Delivery</h6>
+                            <p className="no">04</p>
+                            <h6>Full-Stack Expertise</h6>
                             <p className="para">
-                                We prioritize performance, scalability, and clean code in every project.
+                                From frontend design to backend logic and AI, we cover it all.
                             </p>
                         </div>
                     </div>
