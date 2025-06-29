@@ -15,16 +15,38 @@ const ContactPage = () => {
         <div className="contact-main-area">
           {/* Left: Contact Form */}
           <form className="contact-form-box">
-            <input type="text" placeholder="Enter your name" className="contact-input" />
-            <div className="contact-row">
-              <input type="text" placeholder="Enter your mobile number" className="contact-input" />
-              <input type="email" placeholder="Enter your email id" className="contact-input" />
+            <div className="input-group">
+              <label>Name</label>
+              <input type="text" placeholder="Enter your name" className="contact-input" />
             </div>
+
             <div className="contact-row">
-              <input type="text" placeholder="Enter your country" className="contact-input" />
-              <input type="text" placeholder="Enter your service type" className="contact-input" />
+              <div className="input-group">
+                <label>Mobile Number</label>
+                <input type="text" placeholder="Enter your mobile number" className="contact-input" />
+              </div>
+              <div className="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email id" className="contact-input" />
+              </div>
             </div>
-            <textarea placeholder="Enter your message" className="contact-textarea"></textarea>
+
+            <div className="contact-row">
+              <div className="input-group">
+                <label>Country</label>
+                <input type="text" placeholder="Enter your country" className="contact-input" />
+              </div>
+              <div className="input-group">
+                <label>Service Type</label>
+                <input type="text" placeholder="Enter your service type" className="contact-input" />
+              </div>
+            </div>
+
+            <div className="input-group">
+              <label>Message</label>
+              <textarea placeholder="Enter your message" className="contact-textarea"></textarea>
+            </div>
+
             <button type="submit" className="contact-submit-button">Submit</button>
           </form>
 

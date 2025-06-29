@@ -37,25 +37,49 @@
   flex-wrap: wrap;
 }
 
-.contact-input {
+.contact-row .input-group {
   flex: 1;
-  padding: 10px 14px;
+  min-width: 240px;
+}
+
+/* Floating Label Group */
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background-color: white;
+  padding: 0 6px;
+  font-size: 14px;
+  color: #00204A;
+  z-index: 2;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 12px 14px;
   border: 1px solid #00204A;
   border-radius: 4px;
   font-size: 16px;
-  height: 44px; /* Fixed height for all inputs */
   box-sizing: border-box;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-input {
+  height: 44px;
 }
 
 .contact-textarea {
-  padding: 12px 16px;
-  border: 1px solid #00204A;
-  border-radius: 4px;
-  font-size: 16px;
   height: 220px;
-  resize: none;      /* Disable resizing */
+  resize: none;
   overflow: auto;
-  box-sizing: border-box;
 }
 
 .contact-submit-button {
