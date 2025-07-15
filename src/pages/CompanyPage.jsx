@@ -55,7 +55,7 @@ const CompanyPage = () => {
               <p>Chief Executive Officer</p>
             </div>
             <div className="founder-card">
-              <img src="/images/founder.png" alt="Aashish Shahjan" className="founder-image" />
+              <img src="/images/aashish.jpg" alt="Aashish Shahjan" className="founder-image" />
               <h3>Aashish Shahjan</h3>
               <p>Chief Managing Director</p>
             </div>
