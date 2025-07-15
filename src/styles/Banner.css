@@ -1,5 +1,7 @@
 .banner {
     position: relative;
+    width: 1440px;
+    margin: 0 auto;
     top: 10px;
     left: -10vw;
     width: 120vw;

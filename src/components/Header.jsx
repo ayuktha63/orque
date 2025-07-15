@@ -15,7 +15,7 @@ function Header() {
       <div className="container">
         <div className={`href ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/" onClick={toggleMenu} className="links">Home</Link>
-          <a href="#Company" onClick={toggleMenu} className="links">Company</a>
+          <Link to="/company" onClick={toggleMenu} className="links">Company</Link>
           <Link to="/contact" onClick={toggleMenu} className="links">Contact</Link>
           <a href="/#Services" onClick={toggleMenu} className="links">Services</a>
         </div>

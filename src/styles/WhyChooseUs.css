@@ -1,5 +1,6 @@
 .section3 {
-    margin: 0 80px; /* Fixed 80px margin for left and right on PC */
+    margin: 0 auto; /* Fixed 80px margin for left and right on PC */
+    max-width: 1440px;
 }
 .section3-heading h2 {
     color: #00204A;
@@ -78,6 +79,11 @@ h6 {
 }
 
 /* Tablet screens (481px to 1024px) */
+@media screen and (max-width:1440px){
+    .section3{
+        margin: 0 80px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .section3 {
         margin: 0 40px; /* Adjusted margin for tablets */

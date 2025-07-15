@@ -1,6 +1,7 @@
 .section2 {
     height: 100%;
-    margin: 0 80px;
+    margin: 0 auto;
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
     gap: 100px;
@@ -87,10 +88,10 @@
 }
 
 /* Tablet screens (481px to 1024px) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
     .section2 {
-        margin: 0 40px;
-        flex-direction: column;
+        margin: 0 80px;
+        flex-direction: row;
         gap: 50px;
     }
     .left-section2 h3 {

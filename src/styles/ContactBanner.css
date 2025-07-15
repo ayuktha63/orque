@@ -1,23 +1,27 @@
 .contact-banner {
-    background: radial-gradient(126.86% 80.56% at 33.65% 17.11%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.20) 100%), #00204A;
+    background: radial-gradient(
+        126.86% 80.56% at 33.65% 17.11%,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+    ), #00204A;
     transform: skewY(-3deg);
-    padding: 100px 20px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    max-width: 1440px;
+    margin: 80px auto;
+    padding: 80px 20px;
     color: white;
     text-align: center;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .contact-content {
-    transform: skewY(3deg);
+    transform: skewY(3deg); /* Counteract parent skew for readability */
     max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .badge {
@@ -26,28 +30,30 @@
     padding: 8px 20px;
     border: 1px solid white;
     border-radius: 999px;
-    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: 400;
     margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.05);
     gap: 8px;
 }
 
 .contact-content h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(28px, 4.5vw, 36px);
     font-weight: 700;
-    font-family: Inter, sans-serif;
-    font-style: normal;
-    font-size: 39.817px;
+    line-height: 1.2;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .contact-content p {
-    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 2.5vw, 16px);
     line-height: 1.6;
-    max-width: 581px;
-    width: 100%;
-    font-family: Inter, sans-serif;
     color: #e0e0e0;
+    max-width: 600px;
+    width: 100%;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -60,7 +66,8 @@
     background: #005792;
     color: white;
     border-radius: 999px;
-    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 2.5vw, 16px);
     font-weight: 600;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -73,46 +80,69 @@
 /* Tablet (481px to 1024px) */
 @media screen and (max-width: 1024px) {
     .contact-banner {
-        padding: 80px 20px;
+        margin: 60px auto;
+        padding: 60px 20px;
+        transform: skewY(-2deg);
     }
 
+    .contact-content {
+        transform: skewY(2deg);
+        max-width: 90%;
+    }
+
+    .badge {
+        font-size: clamp(11px, 1.8vw, 13px);
+        padding: 6px 16px;
+    }
+
+ Hitchcock
+
     .contact-content h2 {
-        font-size: 32px;
+        font-size: clamp(24px, 4vw, 32px);
     }
 
     .contact-content p {
-        font-size: 15px;
-        max-width: 90%;
+        font-size: clamp(13px, 2.3vw, 15px);
+        max-width: 85%;
     }
 
     .contact-btn {
         padding: 10px 24px;
-        font-size: 15px;
+        font-size: clamp(13px, 2.3vw, 15px);
     }
 }
 
 /* Mobile (up to 480px) */
 @media screen and (max-width: 480px) {
     .contact-banner {
-        padding: 60px 16px;
+        margin: 40px auto;
+        padding: 40px 16px;
+        transform: skewY(-1.5deg);
+    }
+
+    .contact-content {
+        transform: skewY(1.5deg);
+        max-width: 100%;
+        padding: 0 15px;
     }
 
     .badge {
-        font-size: 12px;
-        padding: 6px 16px;
+        font-size: clamp(10px, 1.8vw, 12px);
+        padding: 6px 12px;
     }
 
     .contact-content h2 {
-        font-size: 24px;
+        font-size: clamp(20px, 3.5vw, 24px);
     }
 
     .contact-content p {
-        font-size: 14px;
+        font-size: clamp(12px, 2vw, 14px);
+        max-width: 100%;
     }
 
     .contact-btn {
-        padding: 10px 20px;
-        font-size: 14px;
+        padding: 8px 20px;
+        font-size: clamp(12px, 2vw, 14px);
         gap: 8px;
     }
 }
