@@ -50,7 +50,7 @@ const CompanyPage = () => {
           <h2 className="founders-title">FOUNDERS</h2>
           <div className="founders-cards">
             <div className="founder-card">
-              <img src="/images/founder.png" alt="Krishna Prasad S M" className="founder-image" />
+              <img src="/images/krishna.png" alt="Krishna Prasad S M" className="founder-image" />
               <h3>Krishna Prasad S M</h3>
               <p>Chief Executive Officer</p>
             </div>
@@ -65,7 +65,7 @@ const CompanyPage = () => {
               <p>Chief Marketing Officer</p>
             </div>
             <div className="founder-card">
-              <img src="/images/founder.png" alt="Rizwan Shahjan" className="founder-image" />
+              <img src="/images/rizwan.jpeg" alt="Rizwan Shahjan" className="founder-image" />
               <h3>Rizwan Shahjan</h3>
               <p>Chief Technical Officer</p>
             </div>
