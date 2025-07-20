@@ -7,7 +7,6 @@ function Header() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Automatically scroll to top on any route change
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location.pathname]);
@@ -42,21 +41,19 @@ function Header() {
     }
   };
 
-  // ✅ Updated logo click to redirect to external site
-  const handleLogoClick = () => {
-    window.location.href = 'https://orqueinnovations.netlify.app/';
-  };
-
   return (
     <div className="header">
-      <img 
-        src="/images/logo copy.webp" 
-        alt="Logo" 
-        className="logo" 
-        loading="lazy" 
-        onClick={handleLogoClick}
-        style={{ cursor: 'pointer' }}
-      />
+      {/* ✅ Updated logo wrapped in <Link> */}
+      <Link to="/" aria-label="Home">
+        <img 
+          src="/images/logo copy.webp" 
+          alt="Logo" 
+          className="logo" 
+          loading="lazy" 
+          style={{ cursor: 'pointer' }}
+        />
+      </Link>
+
       <div className="container">
         <div className={`href ${isMenuOpen ? 'active' : ''}`}>
           <a 
