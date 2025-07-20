@@ -1,6 +1,6 @@
 .company-page {
   font-family: 'Arial', sans-serif;
-  padding: 20px 20px; /* Equal left/right padding */
+  padding: 20px;
   margin-top: 60px;
   max-width: 1440px;
   margin-left: auto;
@@ -17,9 +17,13 @@
 }
 
 .about-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
   max-width: 1440px;
-  margin: 0 auto; /* Equal margins */
-  padding: 0 20px; /* Equal padding */
+  margin: 0 auto 40px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -49,9 +53,10 @@
 }
 
 .mission, .vision, .founders {
+  width: 100%;
   max-width: 1440px;
-  margin: 0 auto; /* Equal margins */
-  padding: 0 20px; /* Equal padding */
+  margin: 0 auto;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -151,9 +156,9 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .company-page {
-    padding: 10px 10px; /* Equal for mobile */
-    margin-top: 40px;
+  .about-us {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .about-content {
