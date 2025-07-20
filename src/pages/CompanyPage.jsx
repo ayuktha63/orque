@@ -5,7 +5,7 @@ import '../styles/CompanyPage.css';
 
 const CompanyPage = () => {
   return (
-    <>
+    <div className="company-wrapper">
       <Header />
       <div className="company-page">
         <h1 className="page-title">About Us</h1>
@@ -73,7 +73,7 @@ const CompanyPage = () => {
         </section>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

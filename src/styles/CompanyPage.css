@@ -1,4 +1,11 @@
+.company-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .company-page {
+  flex: 1;
   font-family: 'Arial', sans-serif;
   padding: 20px;
   margin-top: 60px;

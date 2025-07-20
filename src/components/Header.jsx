@@ -52,7 +52,7 @@ function Header() {
       // If already on home, scroll to top (refreshes view)
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      // Navigate to home (useEffect will scroll to top)
+      // Navigate to home (useEffect will handle scroll)
       navigate('/');
     }
   };
@@ -69,10 +69,22 @@ function Header() {
       />
       <div className="container">
         <div className={`href ${isMenuOpen ? 'active' : ''}`}>
-          <a onClick={handleHomeClick} className="links">Home</a>
+          <a 
+            onClick={handleHomeClick} 
+            className="links" 
+            style={{ cursor: 'pointer' }} // Ensure pointer cursor on hover
+          >
+            Home
+          </a>
           <Link to="/company" onClick={toggleMenu} className="links">Company</Link>
           <Link to="/contact" onClick={toggleMenu} className="links">Contact</Link>
-          <a onClick={handleServicesClick} className="links">Services</a>
+          <a 
+            onClick={handleServicesClick} 
+            className="links" 
+            style={{ cursor: 'pointer' }} // Ensure pointer cursor on hover
+          >
+            Services
+          </a>
         </div>
         <Link to="/contact">
           <button className="talk1 desktop-only">Let’s Talk</button>
