@@ -9,7 +9,7 @@ function ContactBanner() {
             <div className="contact-content">
                 <div className="badge">
                     <HiOutlineSpeakerphone size={18} />
-                    <span>We Ready 24 Hours</span>
+                    <span>We are available 24 Hours</span>
                 </div>
                 <h2>Have a Project in Mind? Let’s Talk</h2>
                 <p>

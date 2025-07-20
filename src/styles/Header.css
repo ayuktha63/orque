@@ -123,6 +123,49 @@
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social p {
+  color: #FFF;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.social-icons a {
+  color: #FFF;
+  transition: color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  color: #1DA1F2;
+  transform: scale(1.18) translateY(-2px);
+}
+
+/* SVGs inherit color from parent, so make sure they're set to currentColor if desired: */
+.social-icons svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+  stroke: currentColor;
+  fill: none;
+}
 
 /* Tablet (481px to 1024px) */
 @media screen and (max-width: 1024px) {

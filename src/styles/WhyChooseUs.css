@@ -1,6 +1,7 @@
 .section3 {
-    margin: 0 auto; /* Fixed 80px margin for left and right on PC */
+    margin: 0 auto;
     max-width: 1440px;
+    padding: 0 80px; /* Added equal left and right padding for balanced spacing from edges on PC */
 }
 .section3-heading h2 {
     color: #00204A;
@@ -78,15 +79,16 @@ h6 {
     gap: 80px;
 }
 
+
 /* Tablet screens (481px to 1024px) */
 @media screen and (max-width:1440px){
     .section3{
-        margin: 0 80px;
+        padding: 0 80px; /* Equal left/right padding (maintained for smaller desktops/tablets) */
     }
 }
 @media screen and (max-width: 1024px) {
     .section3 {
-        margin: 0 40px; /* Adjusted margin for tablets */
+        padding: 0 40px; /* Adjusted equal left/right padding for tablets */
     }
     .section3-heading h2 {
         font-size: 32px;
@@ -126,10 +128,11 @@ h6 {
     }
 }
 
+
 /* Mobile screens (up to 480px) */
 @media screen and (max-width: 480px) {
     .section3 {
-        margin: 0 20px; /* Adjusted margin for mobile */
+        padding: 0 20px; /* Adjusted equal left/right padding for mobile */
     }
     .section3-heading h2 {
         font-size: 28px;
@@ -165,4 +168,4 @@ h6 {
     .para {
         font-size: 12px;
     }
-}   
+}
