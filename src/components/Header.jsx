@@ -10,7 +10,7 @@ function Header() {
   // Automatically scroll to top on any route change
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [location.pathname]); // Triggers on every path change
+  }, [location.pathname]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,10 +19,8 @@ function Header() {
   const handleHomeClick = () => {
     toggleMenu();
     if (location.pathname === '/') {
-      // If already on home, scroll to top smoothly
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      // If on another page, navigate to home (useEffect will handle scroll)
       navigate('/');
     }
   };
@@ -37,24 +35,16 @@ function Header() {
     };
 
     if (location.pathname === '/') {
-      // If already on home, scroll to Services section
       scrollToServices();
     } else {
-      // If on another page, navigate to home and then scroll to Services
       navigate('/', { state: { scrollTo: 'Services' } });
-      // Use a slight delay to ensure the page has loaded
-      setTimeout(scrollToServices, 100); // Adjust delay if needed based on load time
+      setTimeout(scrollToServices, 100);
     }
   };
 
+  // ✅ Updated logo click to redirect to external site
   const handleLogoClick = () => {
-    if (location.pathname === '/') {
-      // If already on home, scroll to top (refreshes view)
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      // Navigate to home (useEffect will handle scroll)
-      navigate('/');
-    }
+    window.location.href = 'https://orqueinnovations.netlify.app/';
   };
 
   return (
@@ -64,15 +54,15 @@ function Header() {
         alt="Logo" 
         className="logo" 
         loading="lazy" 
-        onClick={handleLogoClick}  // Added handler for logo click
-        style={{ cursor: 'pointer' }}  // Makes logo clickable visually
+        onClick={handleLogoClick}
+        style={{ cursor: 'pointer' }}
       />
       <div className="container">
         <div className={`href ${isMenuOpen ? 'active' : ''}`}>
           <a 
             onClick={handleHomeClick} 
             className="links" 
-            style={{ cursor: 'pointer' }} // Ensure pointer cursor on hover
+            style={{ cursor: 'pointer' }}
           >
             Home
           </a>
@@ -81,7 +71,7 @@ function Header() {
           <a 
             onClick={handleServicesClick} 
             className="links" 
-            style={{ cursor: 'pointer' }} // Ensure pointer cursor on hover
+            style={{ cursor: 'pointer' }}
           >
             Services
           </a>
