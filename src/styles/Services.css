@@ -4,21 +4,22 @@
     max-width: 1440px;
     display: flex;
     flex-direction: row;
-    gap: 128px; /* Preserved gap for consistency */
-    padding: 0 40px; /* Preserved reduced padding */
-    box-sizing: border-box;
+    gap: 100px;
+
+
 }
 
 .left-section2 h3 {
-    padding-top: 120px; /* Increased from 100px */
+    padding-top: 100px;
     color: #00204A;
+    height: 48px;
     font-family: Inter, sans-serif;
     font-size: 33.18px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 1.12;
-    margin: 0 0 10px 0; /* Preserved reduced bottom margin */
-    word-break: break-word;
+    font-weight: 500;
+    line-height: normal;
+
+
 }
 
 .left-section2 p {
@@ -28,37 +29,38 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: normal;
     letter-spacing: 0.461px;
-    margin: 0 0 10px 0; /* Preserved reduced bottom margin */
+
 }
 
 .right-section2 h2 {
     color: #00204A;
     width: 304px;
+    height: 53px;
     flex-shrink: 0;
     font-family: Inter, sans-serif;
     font-size: 39.81px;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.2;
-    margin: 0 0 12px 0; /* Preserved reduced bottom margin */
-    padding-top: 120px; /* Added/increased top padding for consistency */
+    line-height: normal;
+
+
 }
 
 .right-section2 img {
     width: 360px;
     height: 440px;
     object-fit: cover;
-    display: block;
-    margin: 0; /* No margin change */
+
+
 }
 
 .expanded-section {
     max-height: 404px;
     overflow-y: scroll;
     scrollbar-width: none;
-    margin: 0; /* No margin change */
+
 }
 
 .expanded-section::-webkit-scrollbar {
@@ -72,7 +74,7 @@
     color: #444;
     font-size: 16px;
     padding: 0 10px;
-    margin: 0;
+
 }
 
 .accordion-content.open {
@@ -86,24 +88,25 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #ccc;
-    margin: 0;
+
 }
 
 .sections h4 {
+    height: 48px;
     color: #00204A;
     font-family: Inter, sans-serif;
     font-size: 27.65px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.2;
-    margin: 0;
+    line-height: normal;
+
 }
 
 .sections img {
     height: 20px;
     width: auto;
     cursor: pointer;
-    margin: 0;
+
 }
 
 .sections img.rotated {
@@ -113,30 +116,31 @@
 /* Tablet screens (481px to 1024px) */
 @media screen and (max-width: 1440px) {
     .section2 {
-        margin: 0 auto;
-        padding: 0 20px; /* Preserved reduced padding */
+        margin: 0 80px;
+        flex-direction: row;
+        gap: 50px;
     }
     .left-section2 h3 {
-        padding-top: 70px; /* Increased from 50px */
+        padding-top: 50px;
         font-size: 28px;
-        line-height: 1.18;
-        margin: 0 0 8px 0;
+        height: 40px;
+
     }
     .left-section2 p {
         font-size: 14px;
         letter-spacing: 0.4px;
-        margin: 0 0 8px 0;
+
     }
     .right-section2 h2 {
         font-size: 32px;
         width: 100%;
-        margin: 0 0 9px 0;
-        padding-top: 70px; /* Added/increased top padding for consistency */
+        height: auto;
+
     }
     .right-section2 img {
         width: 300px;
-        height: 366px;
-        margin: 0;
+        height: 366px; /* Maintain aspect ratio (440/360 ≈ 1.222) */
+        object-fit: cover;
     }
     .expanded-section {
         max-height: 300px;
@@ -150,59 +154,59 @@
     }
     .sections h4 {
         font-size: 24px;
-        line-height: 1.2;
-        margin: 0;
+        height: 40px;
+
     }
     .sections img {
         height: 18px;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .section2 {
-        padding: 0 10px; /* Preserved reduced padding */
-        gap: 50px;
-    }
-}
+
+
+
+
+
+
 
 /* Mobile screens (up to 480px) */
 @media screen and (max-width: 480px) {
     .section2 {
-        margin: 0 auto;
-        padding: 0 10px; /* Preserved reduced padding */
+        margin: 0 20px;
+
         flex-direction: column;
         gap: 30px;
     }
     .right-section2 {
-        order: -1;
+        order: -1; /* Move right-section2 (Our Services + photo) to top */
     }
     .left-section2 {
-        order: 0;
+        order: 0; /* Move left-section2 (Creating What Comes Next + accordion) below */
     }
     .left-section2 h3 {
-        padding-top: 50px; /* Increased from 30px */
+        padding-top: 30px;
         font-size: 24px;
-        line-height: 1.24;
-        margin: 0 0 6px 0;
+        height: 36px;
+
     }
     .left-section2 p {
         font-size: 12px;
         letter-spacing: 0.3px;
-        margin: 0 0 6px 0;
+
     }
     .right-section2 h2 {
         font-size: 28px;
         width: 100%;
-        margin: 0 0 7px 0;
-        padding-top: 50px; /* Added/increased top padding for consistency */
+        height: auto;
+
     }
     .right-section2 img {
         width: 100%;
         height: auto;
         max-width: 280px;
-        max-height: 342px;
-        margin: 0 auto;
-        display: block;
+        max-height: 342px; /* Maintain aspect ratio */
+        object-fit: cover;
+
     }
     .expanded-section {
         max-height: 250px;
@@ -216,8 +220,8 @@
     }
     .sections h4 {
         font-size: 20px;
-        line-height: 1.22;
-        margin: 0;
+        height: 36px;
+
     }
     .sections img {
         height: 16px;
