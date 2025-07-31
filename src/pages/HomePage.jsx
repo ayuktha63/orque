@@ -19,7 +19,10 @@ const HomePage = () => {
           name="description"
           content="Orque Innovations offers clean-coded, scalable custom software, AI solutions, and digital transformation services for startups and enterprises."
         />
-        <meta name="keywords" content="Orque Innovations, custom software, scalable tech, AI development, ERP, Kerala IT company" />
+        <meta
+          name="keywords"
+          content="Orque Innovations, custom software, scalable tech, AI development, ERP, Kerala IT company"
+        />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Orque Innovations LLP" />
         <link rel="canonical" href="https://orqueinnovations.com/" />
@@ -39,7 +42,6 @@ const HomePage = () => {
         <meta name="twitter:image" content="https://orqueinnovations.com/orque-og-image.png" />
       </Helmet>
 
-      {/* Your page content */}
       <Header />
       <Hero />
       <Banner />
