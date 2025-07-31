@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/Contact.css';
@@ -6,6 +7,32 @@ import '../styles/Contact.css';
 const ContactPage = () => {
   return (
     <div className="contact-page-wrapper">
+      <Helmet>
+        <title>Contact Orque Innovations | Talk to Our Software Experts</title>
+        <meta
+          name="description"
+          content="Have a project in mind? Contact Orque Innovations LLP for scalable software, AI, or ERP solutions. Get in touch via phone, email, or our contact form."
+        />
+        <meta name="keywords" content="Contact Orque Innovations, ERP software, custom software, AI development, Kerala IT company" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Orque Innovations LLP" />
+        <link rel="canonical" href="https://orqueinnovations.com/contact" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://orqueinnovations.com/contact" />
+        <meta property="og:title" content="Contact Orque Innovations | Talk to Our Software Experts" />
+        <meta property="og:description" content="Need custom software or ERP services? Reach out to Orque Innovations LLP via our contact form or visit us in Thiruvananthapuram, Kerala." />
+        <meta property="og:image" content="https://orqueinnovations.com/orque-og-image.png" />
+
+        {/* Twitter / X */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://orqueinnovations.com/contact" />
+        <meta name="twitter:title" content="Contact Orque Innovations | Talk to Our Software Experts" />
+        <meta name="twitter:description" content="Need custom software or ERP services? Reach out to Orque Innovations LLP via our contact form or visit us in Thiruvananthapuram, Kerala." />
+        <meta name="twitter:image" content="https://orqueinnovations.com/orque-og-image.png" />
+      </Helmet>
+
       <Header />
       <div className="contact-content-section">
         <div className="contact-header">

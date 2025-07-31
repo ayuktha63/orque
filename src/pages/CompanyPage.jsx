@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/CompanyPage.css';
@@ -6,6 +7,35 @@ import '../styles/CompanyPage.css';
 const CompanyPage = () => {
   return (
     <div className="company-wrapper">
+      <Helmet>
+        <title>About Orque Innovations LLP | Meet Our Founders & Vision</title>
+        <meta
+          name="description"
+          content="Learn about the student-founded journey of Orque Innovations LLP, our mission for ethical software, and the passionate team behind our innovation."
+        />
+        <meta
+          name="keywords"
+          content="Orque Innovations, About Us, startup founders, company mission, ethical programming, Kerala IT startup, student-founded"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Orque Innovations LLP" />
+        <link rel="canonical" href="https://orqueinnovations.com/company" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://orqueinnovations.com/company" />
+        <meta property="og:title" content="About Orque Innovations LLP | Meet Our Founders & Vision" />
+        <meta property="og:description" content="Discover how a group of passionate engineering students built Orque Innovations LLP to deliver ethical and impactful software solutions." />
+        <meta property="og:image" content="https://orqueinnovations.com/orque-og-image.png" />
+
+        {/* Twitter / X */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://orqueinnovations.com/company" />
+        <meta name="twitter:title" content="About Orque Innovations LLP | Meet Our Founders & Vision" />
+        <meta name="twitter:description" content="Discover how a group of passionate engineering students built Orque Innovations LLP to deliver ethical and impactful software solutions." />
+        <meta name="twitter:image" content="https://orqueinnovations.com/orque-og-image.png" />
+      </Helmet>
+
       <Header />
       <div className="company-page">
         <h1 className="page-title">About Us</h1>
