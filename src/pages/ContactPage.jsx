@@ -8,7 +8,7 @@ const ContactPage = () => {
   return (
     <div className="contact-page-wrapper">
       <Helmet>
-        <title>Contact Orque Innovations | Talk to Our Software Experts</title>
+        <title>Contact Orque Innovations</title>
         <meta
           name="description"
           content="Have a project in mind? Contact Orque Innovations LLP for scalable software, AI, or ERP solutions. Get in touch via phone, email, or our contact form."

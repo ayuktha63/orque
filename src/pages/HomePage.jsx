@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <div className="wrapper">
       <Helmet>
-        <title>Orque Innovations | Custom Software Development & Scalable Tech</title>
+        <title>Orque Innovations LLP</title>
         <meta
           name="description"
           content="Orque Innovations offers clean-coded, scalable custom software, AI solutions, and digital transformation services for startups and enterprises."

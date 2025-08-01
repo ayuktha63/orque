@@ -8,7 +8,7 @@ const CompanyPage = () => {
   return (
     <div className="company-wrapper">
       <Helmet>
-        <title>About Orque Innovations LLP | Meet Our Founders & Vision</title>
+        <title>About Orque Innovations LLP</title>
         <meta
           name="description"
           content="Learn about the student-founded journey of Orque Innovations LLP, our mission for ethical software, and the passionate team behind our innovation."
