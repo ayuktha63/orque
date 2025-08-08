@@ -13,7 +13,6 @@
     /* Ensure it stays above other elements */
 }
 
-
 .banner-heading {
     font-family: Inter, sans-serif;
     font-size: clamp(14px, 2vw, 18px);
@@ -94,5 +93,30 @@
 
     .mongodb-logo {
         height: 38px;
+    }
+}
+
+/* Hide desktop version on mobile */
+.desktop-only {
+    display: flex;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* Mobile-only carousel styles */
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+        width: 100%;
+    }
+
+    .swiper {
+        padding: 10px 0;
     }
 }
