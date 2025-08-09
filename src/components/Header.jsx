@@ -45,29 +45,29 @@ function Header() {
     <div className="header">
       {/* ✅ Updated logo wrapped in <Link> */}
       <Link to="/" aria-label="Home">
-        <img 
-          src="/images/logo copy.webp" 
-          alt="Logo" 
-          className="logo" 
-          loading="lazy" 
+        <img
+          src="/images/logo copy.webp"
+          alt="Logo"
+          className="logo"
+          loading="lazy"
           style={{ cursor: 'pointer' }}
         />
       </Link>
 
       <div className="container">
         <div className={`href ${isMenuOpen ? 'active' : ''}`}>
-          <a 
-            onClick={handleHomeClick} 
-            className="links" 
+          <a
+            onClick={handleHomeClick}
+            className="links"
             style={{ cursor: 'pointer' }}
           >
             Home
           </a>
           <Link to="/company" onClick={toggleMenu} className="links">Company</Link>
           <Link to="/contact" onClick={toggleMenu} className="links">Contact</Link>
-          <a 
-            onClick={handleServicesClick} 
-            className="links" 
+          <a
+            onClick={handleServicesClick}
+            className="links"
             style={{ cursor: 'pointer' }}
           >
             Services

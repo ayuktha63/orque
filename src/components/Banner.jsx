@@ -19,7 +19,7 @@ function Banner() {
     ];
 
     return (
-        <section className="banner">
+        <section className="banner" data-aos="fade-up">
             <h3 className="banner-heading">Powered by</h3>
 
             {/* Desktop View */}

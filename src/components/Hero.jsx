@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 function Hero() {
     return (
-        <section className="section1" id="Home">
+        <section className="section1" id="Home" >
             <video autoPlay muted loop playsInline className="bg-video">
                 <source src="/images/orque.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="overlay"></div>
-            <div className="content">
+            <div className="content" data-aos="fade-right">
                 <h1>Transform</h1>
                 <h1>How Your Team Works.</h1>
                 <p>Where Innovation Meets <br />Simplicity</p>

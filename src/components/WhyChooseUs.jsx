@@ -4,11 +4,11 @@ import "../styles/WhyChooseUs.css";
 function WhyChooseUs() {
   return (
     <section className="section3">
-      <div className="section3-heading">
+      <div className="section3-heading" data-aos="fade-up">
         <h2>Why Choose Us?</h2>
         <p>We blend agility, expertise, and purpose in every project.</p>
       </div>
-      <div className="section3-bottom">
+      <div className="section3-bottom" data-aos="fade-up">
         {/* New freeform layout for images */}
         <div className="section3-floating-images">
           <img src="/images/image1.png" alt="reason 1" className="img1" />
@@ -18,7 +18,7 @@ function WhyChooseUs() {
         </div>
 
         {/* Keep the content as-is */}
-        <div className="section3-content">
+        <div className="section3-content" data-aos="fade-up">
           <div className="section3-right">
             <p className="no">01</p>
             <h6>Quality-Driven Delivery</h6>

@@ -15,7 +15,7 @@ function TechStack() {
     ];
 
     return (
-        <section className="tech-banner">
+        <section className="tech-banner" data-aos="fade-up">
             <h2>Our Tech Stack</h2>
 
             {/* Desktop View */}

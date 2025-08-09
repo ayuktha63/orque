@@ -9,8 +9,8 @@ function Services() {
     };
 
     return (
-        <section className="section2" id="Services">
-            <div className="left-section2">
+        <section className="section2" id="Services" data-aos="fade-up">
+            <div className="left-section2" data-aos="fade-up">
                 <h3>Creating What Comes Next</h3>
                 <p>
                     Ready to transform your business with cutting-edge technology? We partner with
@@ -27,7 +27,7 @@ function Services() {
                             className={`toggle-btn ${openIndex === 0 ? 'rotated' : ''}`}
                             onClick={() => toggleAccordion(0)}
                             alt="toggle"
-                            loading="lazy" 
+                            loading="lazy"
                         />
                     </div>
                     <div className={`accordion-content ${openIndex === 0 ? 'open' : ''}`}>
@@ -45,7 +45,7 @@ function Services() {
                             className={`toggle-btn ${openIndex === 1 ? 'rotated' : ''}`}
                             onClick={() => toggleAccordion(1)}
                             alt="toggle"
-                            loading="lazy" 
+                            loading="lazy"
                         />
                     </div>
                     <div className={`accordion-content ${openIndex === 1 ? 'open' : ''}`}>
@@ -63,7 +63,7 @@ function Services() {
                             className={`toggle-btn ${openIndex === 2 ? 'rotated' : ''}`}
                             onClick={() => toggleAccordion(2)}
                             alt="toggle"
-                            loading="lazy" 
+                            loading="lazy"
                         />
                     </div>
                     <div className={`accordion-content ${openIndex === 2 ? 'open' : ''}`}>
@@ -76,7 +76,7 @@ function Services() {
                     </div>
                 </div>
             </div>
-            <div className="right-section2">
+            <div className="right-section2" data-aos="fade-up">
                 <h2>Our Services</h2>
                 <img src="/images/services.webp" alt="services" loading="lazy" />
             </div>
