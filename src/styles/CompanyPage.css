@@ -159,9 +159,15 @@
   position: relative;
 }
 
-.founder-card p {
-  font-size: clamp(0.8em, 2vw, 0.9em);
-  color: #666;
+.founder-card {
+  position: relative;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  cursor: pointer; /* optional: show pointer to indicate interactive */
 }
 
 .founder-name-wrapper {
@@ -169,34 +175,29 @@
   position: relative;
 }
 
-.founder-name {
-  transition: color 0.3s ease;
-}
-
 .linkedin-icon-link {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: -125%;
+  right: 1px; /* position on the right inside the card */
+  transform: translateY(-50%);
   display: none;
   z-index: 10;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.8); /* optional for better contrast */
+  background-color: rgba(255, 255, 255, 0.9); /* subtle bg for contrast */
   border-radius: 50%;
   padding: 4px;
   box-shadow: 0 0 6px rgba(0, 119, 181, 0.6);
   transition: opacity 0.3s ease;
 }
 
-.founder-name-wrapper:hover .linkedin-icon-link {
+.founder-card:hover .linkedin-icon-link {
   display: block;
 }
 
-.founder-name-wrapper:hover .founder-name {
-  /* Optional: fade or hide the name to highlight the icon */
-  color: transparent;
-  -webkit-user-select: none;
-  user-select: none;
+.founder-name,
+.founder-image,
+.founder-card p {
+  transition: none; /* keep other content unchanged on hover */
 }
 
 .linkedin-icon {
@@ -204,6 +205,7 @@
   height: 24px;
   display: block;
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

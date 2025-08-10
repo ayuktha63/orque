@@ -155,34 +155,33 @@ const CompanyPage = () => {
               <p>Chief Marketing Officer</p>
             </div>
             <div className="founder-card">
-  <img
-    src="/images/rizwan.jpeg"
-    alt="Rizwan Shajahan"
-    className="founder-image"
-  />
+              <img
+                src="/images/rizwan.jpeg"
+                alt="Rizwan Shajahan"
+                className="founder-image"
+              />
 
-  <div className="founder-name-wrapper">
-    <h3 className="founder-name">Rizwan Shajahan</h3>
-    <a
-      href="https://www.linkedin.com/in/rizwanshajahan"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="linkedin-icon-link"
-      aria-label="LinkedIn Profile"
-    >
-      <img
-        src="/images/linkedin.png"
-        alt="LinkedIn"
-        className="linkedin-icon"
-        width="24"
-        height="24"
-      />
-    </a>
-  </div>
+              <div className="founder-name-wrapper">
+                <h3 className="founder-name">Rizwan Shajahan</h3>
+                <a
+                  href="https://www.linkedin.com/in/rizwanshajahan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="linkedin-icon-link"
+                  aria-label="LinkedIn Profile"
+                >
+                  <img
+                    src="/images/linkedin.png"
+                    alt="LinkedIn"
+                    className="linkedin-icon"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </div>
 
-  <p>Chief Technical Officer</p>
-</div>
-
+              <p>Chief Technical Officer</p>
+            </div>
           </div>
         </section>
       </div>
