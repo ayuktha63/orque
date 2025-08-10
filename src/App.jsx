@@ -16,6 +16,7 @@ const App = () => {
       once: false,     // run animation only once
       offset: 100,    // distance before element is in view
     });
+    AOS.refresh();
   }, []);
 
   return (

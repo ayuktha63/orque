@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/CompanyPage.css";
 
 const CompanyPage = () => {
+  useEffect(() => {
+    // Initialize AOS only when this page loads
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 100,
+    });
+
+    // Refresh animations in case of reload
+    setTimeout(() => {
+      AOS.refresh();
+    }, 100);
+
+    // Optional: clean up on unmount
+    return () => {
+      document.querySelectorAll("[data-aos]").forEach(el => {
+        el.classList.remove("aos-animate");
+      });
+    };
+  }, []);
+
   return (
     <div className="company-wrapper">
       <Helmet>
@@ -151,7 +174,7 @@ const CompanyPage = () => {
                 alt="Sudhin Suresh"
                 className="founder-image"
               />
-              
+
               <h3>Sudhin Suresh</h3>
               <p>Chief Marketing Officer</p>
             </div>

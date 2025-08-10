@@ -4,6 +4,15 @@
   flex-direction: column;
 }
 
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
 .company-page {
   flex: 1;
   font-family: 'Arial', sans-serif;
@@ -59,7 +68,9 @@
   max-width: 593px;
 }
 
-.mission, .vision, .founders {
+.mission,
+.vision,
+.founders {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -67,7 +78,8 @@
   box-sizing: border-box;
 }
 
-.mission-container, .vision-container {
+.mission-container,
+.vision-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -77,14 +89,16 @@
   box-sizing: border-box;
 }
 
-.mission-image img, .vision-image img {
+.mission-image img,
+.vision-image img {
   width: 100%;
   max-width: 400px;
   height: auto;
   border-radius: 8px;
 }
 
-.mission-step-content, .vision-step-content {
+.mission-step-content,
+.vision-step-content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -93,14 +107,16 @@
   justify-content: space-between;
 }
 
-.step-image, .vision-step-image {
+.step-image,
+.vision-step-image {
   width: 100%;
   max-width: 592px;
   height: auto;
   border-radius: 8px;
 }
 
-.mission-step-content p, .vision-step-content p {
+.mission-step-content p,
+.vision-step-content p {
   width: 100%;
   max-width: 593px;
   color: #808080;
@@ -167,7 +183,8 @@
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #e0e0e0;
-  cursor: pointer; /* optional: show pointer to indicate interactive */
+  cursor: pointer;
+  /* optional: show pointer to indicate interactive */
 }
 
 .founder-name-wrapper {
@@ -178,12 +195,14 @@
 .linkedin-icon-link {
   position: absolute;
   top: -125%;
-  right: 1px; /* position on the right inside the card */
+  right: 1px;
+  /* position on the right inside the card */
   transform: translateY(-50%);
   display: none;
   z-index: 10;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.9); /* subtle bg for contrast */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* subtle bg for contrast */
   border-radius: 50%;
   padding: 4px;
   box-shadow: 0 0 6px rgba(0, 119, 181, 0.6);
@@ -197,7 +216,8 @@
 .founder-name,
 .founder-image,
 .founder-card p {
-  transition: none; /* keep other content unchanged on hover */
+  transition: none;
+  /* keep other content unchanged on hover */
 }
 
 .linkedin-icon {
@@ -218,20 +238,24 @@
     padding-right: 0;
   }
 
-  .mission-step-content, .vision-step-content {
+  .mission-step-content,
+  .vision-step-content {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .step-image, .vision-step-image {
+  .step-image,
+  .vision-step-image {
     max-width: 100%;
   }
 
-  .mission-step-content p, .vision-step-content p {
+  .mission-step-content p,
+  .vision-step-content p {
     max-width: 100%;
   }
 
-  .page-title, .founders-title {
+  .page-title,
+  .founders-title {
     margin-left: 0;
     text-align: center;
   }
@@ -247,7 +271,8 @@
     grid-template-columns: 1fr;
   }
 
-  .mission-container, .vision-container {
+  .mission-container,
+  .vision-container {
     padding: 20px 10px;
   }
 }
