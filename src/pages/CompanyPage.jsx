@@ -151,6 +151,7 @@ const CompanyPage = () => {
                 alt="Sudhin Suresh"
                 className="founder-image"
               />
+              
               <h3>Sudhin Suresh</h3>
               <p>Chief Marketing Officer</p>
             </div>
