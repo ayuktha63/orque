@@ -164,7 +164,7 @@ const CompanyPage = () => {
               <div className="founder-name-wrapper">
                 <h3 className="founder-name">Rizwan Shajahan</h3>
                 <a
-                  href="https://www.linkedin.com/in/rizwanshajahan"
+                  href="https://www.linkedin.com/in/rizwan-shajahan-766254255/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="linkedin-icon-link"
