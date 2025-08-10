@@ -1,10 +1,79 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/Contact.css';
+import emailjs from 'emailjs-com';
 
 const ContactPage = () => {
+  const [popupVisible, setPopupVisible] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [country, setCountry] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const phone = e.target.phone.value.trim();
+    const countryVal = e.target.country.value.trim();
+
+    // ✅ Name validation: only letters + spaces
+    const nameRegex = /^[A-Za-z\s]+$/;
+    if (!nameRegex.test(e.target.name.value)) {
+      alert('Please enter a valid name (letters only).');
+      return;
+    }
+
+    // ✅ Phone validation
+    if (countryVal.toLowerCase() === 'india') {
+      if (!/^\d{10}$/.test(phone)) {
+        alert('Please enter a valid 10-digit phone number for India.');
+        return;
+      }
+    } else {
+      if (!/^\+?[0-9\s\-]{7,15}$/.test(phone)) {
+        alert('Please enter a valid international phone number.');
+        return;
+      }
+    }
+
+    setIsSending(true);
+
+    // 📩 1. Send main form to you
+    emailjs
+      .sendForm(
+        'service_sike2z5',     // Your Service ID
+        'template_y6bkmdj',    // Template for YOU (admin notification)
+        e.target,
+        '5NsRaDUVCZclTOvvO'    // Public key
+      )
+      .then(() => {
+        // ✅ Now send auto-reply to customer
+        emailjs.send(
+          'service_sike2z5',   // Same service ID
+          'template_zq4liod',  // Auto-reply template for customer
+          {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            phone: e.target.phone.value,
+            country: e.target.country.value,
+            serviceType: e.target.serviceType.value,
+            message: e.target.message.value
+          },
+          '5NsRaDUVCZclTOvvO'
+        );
+
+        setIsSending(false);
+        setPopupVisible(true);
+        e.target.reset();
+        setTimeout(() => setPopupVisible(false), 3000);
+      })
+      .catch((error) => {
+        setIsSending(false);
+        console.error('FAILED...', error);
+        alert('Something went wrong. Please try again.');
+      });
+  };
+
   return (
     <div className="contact-page-wrapper">
       <Helmet>
@@ -17,20 +86,6 @@ const ContactPage = () => {
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Orque Innovations LLP" />
         <link rel="canonical" href="https://orqueinnovations.com/contact" />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://orqueinnovations.com/contact" />
-        <meta property="og:title" content="Contact Orque Innovations | Talk to Our Software Experts" />
-        <meta property="og:description" content="Need custom software or ERP services? Reach out to Orque Innovations LLP via our contact form or visit us in Thiruvananthapuram, Kerala." />
-        <meta property="og:image" content="https://orqueinnovations.com/orque-og-image.png" />
-
-        {/* Twitter / X */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://orqueinnovations.com/contact" />
-        <meta name="twitter:title" content="Contact Orque Innovations | Talk to Our Software Experts" />
-        <meta name="twitter:description" content="Need custom software or ERP services? Reach out to Orque Innovations LLP via our contact form or visit us in Thiruvananthapuram, Kerala." />
-        <meta name="twitter:image" content="https://orqueinnovations.com/orque-og-image.png" />
       </Helmet>
 
       <Header />
@@ -41,41 +96,66 @@ const ContactPage = () => {
 
         <div className="contact-main-area">
           {/* Left: Contact Form */}
-          <form className="contact-form-box">
+          <form className="contact-form-box" onSubmit={handleSubmit}>
             <div className="input-group">
               <label>Name</label>
-              <input type="text" placeholder="Enter your name" className="contact-input" />
+              <input type="text" name="name" placeholder="Enter your name" className="contact-input" required />
             </div>
 
             <div className="contact-row">
               <div className="input-group">
                 <label>Mobile Number</label>
-                <input type="text" placeholder="Enter your mobile number" className="contact-input" />
+                <input type="text" name="phone" placeholder="Enter your mobile number" className="contact-input" required />
               </div>
               <div className="input-group">
                 <label>Email</label>
-                <input type="email" placeholder="Enter your email id" className="contact-input" />
+                <input type="email" name="email" placeholder="Enter your email id" className="contact-input" required />
               </div>
             </div>
 
             <div className="contact-row">
               <div className="input-group">
                 <label>Country</label>
-                <input type="text" placeholder="Enter your country" className="contact-input" />
+                <input
+                  type="text"
+                  name="country"
+                  placeholder="Enter your country"
+                  className="contact-input"
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  required
+                />
               </div>
               <div className="input-group">
                 <label>Service Type</label>
-                <input type="text" placeholder="Enter your service type" className="contact-input" />
+                <select name="serviceType" className="contact-input" required>
+                  <option value="">Select a service</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Mobile App Development">Mobile App Development</option>
+                  <option value="ERP Solutions">ERP Solutions</option>
+                  <option value="AI & Machine Learning">AI & Machine Learning</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="Cloud Solutions">Cloud Solutions</option>
+                </select>
               </div>
             </div>
 
             <div className="input-group">
               <label>Message</label>
-              <textarea placeholder="Enter your message" className="contact-textarea"></textarea>
+              <textarea name="message" placeholder="Enter your message" className="contact-textarea" required></textarea>
             </div>
 
-            <button type="submit" className="contact-submit-button">Submit</button>
+            <button type="submit" className="contact-submit-button" disabled={isSending}>
+              {isSending ? 'Sending...' : 'Submit'}
+            </button>
           </form>
+
+          {/* Success Popup */}
+          {popupVisible && (
+            <div className="popup-message">
+              ✅ Your message has been sent successfully!
+            </div>
+          )}
 
           {/* Right: Map + Info */}
           <div className="contact-map-box">
