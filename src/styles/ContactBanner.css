@@ -1,9 +1,7 @@
 .contact-banner {
-    background: radial-gradient(
-        126.86% 80.56% at 33.65% 17.11%,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.2) 100%
-    ), #00204A;
+    background: radial-gradient(126.86% 80.56% at 33.65% 17.11%,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.2) 100%), #00204A;
     transform: skewY(-3deg);
     max-width: 1440px;
     margin: 80px auto;
@@ -14,7 +12,8 @@
 }
 
 .contact-content {
-    transform: skewY(3deg); /* Counteract parent skew for readability */
+    transform: skewY(3deg);
+    /* Counteract parent skew for readability */
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
@@ -95,9 +94,7 @@
         padding: 6px 16px;
     }
 
- Hitchcock
-
-    .contact-content h2 {
+    Hitchcock .contact-content h2 {
         font-size: clamp(24px, 4vw, 32px);
     }
 

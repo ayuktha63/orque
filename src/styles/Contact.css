@@ -2,16 +2,33 @@
     background-color: #ffffff;
     color: #00204A;
     font-family: 'Inter', sans-serif;
-    display: flex; /* Enable flexbox for full height layout */
-    flex-direction: column; /* Stack children vertically */
-    min-height: 100vh; /* Ensure it fills the full viewport height */
+    display: flex;
+    /* Enable flexbox for full height layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    min-height: 100vh;
+    /* Ensure it fills the full viewport height */
 }
 
 .contact-content-section {
     padding: 60px 40px;
     max-width: 1200px;
     margin: auto;
-    flex: 1; /* Allow content to grow and push footer to bottom */
+    flex: 1;
+    /* Allow content to grow and push footer to bottom */
+}
+
+.popup-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-header h1 {

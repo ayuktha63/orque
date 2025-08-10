@@ -6,7 +6,7 @@ import { HiOutlineSpeakerphone } from 'react-icons/hi';
 function ContactBanner() {
     return (
         <section className="contact-banner">
-            <div className="contact-content" data-aos="fade-up">
+            <div className="contact-content">
                 <div className="badge">
                     <HiOutlineSpeakerphone size={18} />
                     <span>We are available 24 Hours</span>
