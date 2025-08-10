@@ -169,10 +169,21 @@ const ContactPage = () => {
             ></iframe>
 
             <div className="contact-info-box">
-              <p><strong>Address:</strong> SS Kovil Road, Thambanoor, Kumli Lane, Thiruvananthapuram, Kerala, Pin: 695001</p>
-              <p><strong>Phone:</strong> +91 70122 56258</p>
-              <p><strong>Email:</strong> orquesolutions@gmail.com</p>
+              <p>
+                <strong class="label">Address:</strong>
+                Safa Towers, TC 69/55(4), Kamaleshwaram, Manacaud, Thiruvananthapuram, Kerala, 695009
+              </p>
+              <p>
+                <strong class="label">Phone:</strong>
+                +91 70122 56258
+              </p>
+              <p>
+                <strong class="label">Email:</strong>
+                orquesolutions@gmail.com<br />
+                <span class="label"></span>info@orqueinnovations.com
+              </p>
             </div>
+
           </div>
         </div>
       </div>
