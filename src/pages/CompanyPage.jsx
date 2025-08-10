@@ -156,18 +156,52 @@ const CompanyPage = () => {
                 alt="Krishna Prasad S M"
                 className="founder-image"
               />
-              <h3>Krishna Prasad S M</h3>
+
+              <div className="founder-name-wrapper">
+                <h3 className="founder-name">Krishna Prasad S M</h3>
+                <a
+                  href="https://linkedin.com/in/krishna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="linkedin-icon-link"
+                >
+                  <img
+                    src="/images/linkedin.png"
+                    alt="LinkedIn"
+                    className="linkedin-icon"
+                  />
+                </a>
+              </div>
+
               <p>Chief Executive Officer</p>
             </div>
+
             <div className="founder-card">
               <img
                 src="/images/aashish.jpg"
                 alt="Aashish Shajahan"
                 className="founder-image"
               />
-              <h3>Aashish Shajahan</h3>
-              <p>Chief Managing Director</p>
+
+              <div className="founder-name-wrapper">
+                <h3 className="founder-name">Aashish Shajahan</h3>
+                <a
+                  href="https://linkedin.com/in/krishna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="linkedin-icon-link"
+                >
+                  <img
+                    src="/images/linkedin.png"
+                    alt="LinkedIn"
+                    className="linkedin-icon"
+                  />
+                </a>
+              </div>
+
+              <p>Chief Executive Officer</p>
             </div>
+
             <div className="founder-card">
               <img
                 src="/images/founder.jpg"
@@ -178,6 +212,7 @@ const CompanyPage = () => {
               <h3>Sudhin Suresh</h3>
               <p>Chief Marketing Officer</p>
             </div>
+
             <div className="founder-card">
               <img
                 src="/images/rizwan.jpeg"
