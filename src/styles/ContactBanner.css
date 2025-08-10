@@ -3,7 +3,6 @@
             rgba(255, 255, 255, 0) 0%,
             rgba(255, 255, 255, 0.2) 100%), #00204A;
     transform: skewY(-3deg);
-    max-width: 1440px;
     margin: 80px auto;
     padding: 80px 20px;
     color: white;
