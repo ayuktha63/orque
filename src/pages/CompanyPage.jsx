@@ -160,7 +160,7 @@ const CompanyPage = () => {
               <div className="founder-name-wrapper">
                 <h3 className="founder-name">Krishna Prasad S M</h3>
                 <a
-                  href="https://linkedin.com/in/krishna"
+                  href="https://www.linkedin.com/in/krishna-prasad63/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="linkedin-icon-link"
@@ -186,7 +186,7 @@ const CompanyPage = () => {
               <div className="founder-name-wrapper">
                 <h3 className="founder-name">Aashish Shajahan</h3>
                 <a
-                  href="https://linkedin.com/in/krishna"
+                  href="https://www.linkedin.com/in/aashishs14/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="linkedin-icon-link"
