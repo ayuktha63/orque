@@ -137,10 +137,16 @@
   background: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #e0e0e0;
   position: relative;
+  cursor: pointer;
+
+  /* Use flexbox for vertical stacking and centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all content horizontally */
+  text-align: center;
 }
 
 .founder-image {
@@ -148,8 +154,8 @@
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
   border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
 }
 
 .founder-card h3 {
@@ -176,14 +182,15 @@
 }
 
 .linkedin-icon-link {
+  /* Position the icon consistently on each card */
   position: absolute;
-  top: -125%;
-  right: 1px; /* position on the right inside the card */
-  transform: translateY(-50%);
+  bottom: 1px; /* Adjust this value to place it consistently from the bottom of the card */
+  right: -40px;  /* Adjust this value to place it consistently from the right of the card */
+  
   display: none;
   z-index: 10;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.9); /* subtle bg for contrast */
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   padding: 4px;
   box-shadow: 0 0 6px rgba(0, 119, 181, 0.6);
