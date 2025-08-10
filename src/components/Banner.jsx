@@ -9,6 +9,8 @@ import awsLogo from '/images/aws.svg';
 import notionLogo from '/images/notion.svg';
 import bubbleLogo from '/images/bubble.svg';
 import mongodbLogo from '/images/mongo.svg';
+import ibmLogo from '/images/ibm.svg';
+import intercomLogo from '/images/intercom.svg';
 
 function Banner() {
     const logos = [
@@ -16,6 +18,8 @@ function Banner() {
         { src: notionLogo, alt: 'Notion', className: 'notion-logo' },
         { src: bubbleLogo, alt: '.bubble', className: 'bubble-logo' },
         { src: mongodbLogo, alt: 'MongoDB for Startups', className: 'mongodb-logo' },
+        { src: ibmLogo, alt: '.ibm', className: 'ibm-logo' },
+        { src: intercomLogo, alt: 'Intercom', className: 'intercom-logo' },
     ];
 
     return (
