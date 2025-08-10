@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation time in ms
-      once: true,     // run animation only once
+      once: false,     // run animation only once
       offset: 100,    // distance before element is in view
     });
   }, []);
