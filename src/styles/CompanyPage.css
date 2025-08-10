@@ -202,8 +202,8 @@
 .linkedin-icon-link {
   /* Position the icon consistently on each card */
   position: absolute;
-  top: -125%;
-  right: 1px;
+  top: -25px;
+  right: -25px;
   /* position on the right inside the card */
   transform: translateY(-50%);
   display: none;

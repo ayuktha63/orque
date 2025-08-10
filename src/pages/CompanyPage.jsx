@@ -199,7 +199,7 @@ const CompanyPage = () => {
                 </a>
               </div>
 
-              <p>Chief Executive Officer</p>
+              <p>Chief Financial Officer</p>
             </div>
 
             <div className="founder-card">
@@ -209,7 +209,22 @@ const CompanyPage = () => {
                 className="founder-image"
               />
 
-              <h3>Sudhin Suresh</h3>
+              <div className="founder-name-wrapper">
+                <h3 className="founder-name">Sudhin Suresh</h3>
+                <a
+                  href="https://www.linkedin.com/in/sudhin-suresh-b14682284/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="linkedin-icon-link"
+                >
+                  <img
+                    src="/images/linkedin.png"
+                    alt="LinkedIn"
+                    className="linkedin-icon"
+                  />
+                </a>
+              </div>
+
               <p>Chief Marketing Officer</p>
             </div>
 
