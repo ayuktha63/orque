@@ -184,7 +184,7 @@ const CompanyPage = () => {
               />
 
               <div className="founder-name-wrapper">
-                <h3 className="founder-name">Aashish Shajahan</h3>
+                <h3 className="founder-name">Aashish S</h3>
                 <a
                   href="https://www.linkedin.com/in/aashishs14/"
                   target="_blank"
@@ -199,7 +199,7 @@ const CompanyPage = () => {
                 </a>
               </div>
 
-              <p>Chief Financial Officer</p>
+              <p>Chief Managing Director</p>
             </div>
 
             <div className="founder-card">
