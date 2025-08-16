@@ -148,116 +148,92 @@ const CompanyPage = () => {
 
         {/* Founders Section */}
         <section className="founders" data-aos="fade-up">
-          <h2 className="founders-title">FOUNDERS</h2>
-          <div className="founders-cards">
-            <div className="founder-card">
-              <img
-                src="/images/krishna.jpg"
-                alt="Krishna Prasad S M"
-                className="founder-image"
-              />
+  <h2 className="founders-title">FOUNDERS</h2>
+  <div className="founders-cards">
+    
+    
+<div className="founder-card">
+  <img
+    src="/images/krishna.jpg"
+    alt="Krishna Prasad S M"
+    className="founder-image"
+  />
 
-              <div className="founder-name-wrapper">
-                <h3 className="founder-name">Krishna Prasad S M</h3>
-                <a
-                  href="https://www.linkedin.com/in/krishna-prasad63/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="linkedin-icon-link"
-                >
-                  <img
-                    src="/images/linkedin.png"
-                    alt="LinkedIn"
-                    className="linkedin-icon"
-                  />
-                </a>
-              </div>
+  <a
+    href="https://www.linkedin.com/in/krishna-prasad63/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="linkedin-icon-link"
+  >
+    <img src="/images/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
+  </a>
 
-              <p>Chief Executive Officer</p>
-            </div>
+  <h3 className="founder-name">Krishna Prasad S M</h3>
+  <p>Chief Executive Officer</p>
+</div>
 
-            <div className="founder-card">
-              <img
-                src="/images/aashish.jpg"
-                alt="Aashish Shajahan"
-                className="founder-image"
-              />
+    <div className="founder-card">
+      <img
+        src="/images/aashish.jpg"
+        alt="Aashish Shajahan"
+        className="founder-image"
+      />
 
-              <div className="founder-name-wrapper">
-                <h3 className="founder-name">Aashish S</h3>
-                <a
-                  href="https://www.linkedin.com/in/aashishs14/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="linkedin-icon-link"
-                >
-                  <img
-                    src="/images/linkedin.png"
-                    alt="LinkedIn"
-                    className="linkedin-icon"
-                  />
-                </a>
-              </div>
+      <a
+        href="https://www.linkedin.com/in/aashishs14/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="linkedin-icon-link"
+      >
+        <img src="/images/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
+      </a>
 
-              <p>Chief Managing Director</p>
-            </div>
+      <h3 className="founder-name">Aashish S</h3>
+      <p>Chief Managing Director</p>
+    </div>
 
-            <div className="founder-card">
-              <img
-                src="/images/founder.jpg"
-                alt="Sudhin Suresh"
-                className="founder-image"
-              />
+    <div className="founder-card">
+      <img
+        src="/images/founder.jpg"
+        alt="Sudhin Suresh"
+        className="founder-image"
+      />
 
-              <div className="founder-name-wrapper">
-                <h3 className="founder-name">Sudhin Suresh</h3>
-                <a
-                  href="https://www.linkedin.com/in/sudhin-suresh-b14682284/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="linkedin-icon-link"
-                >
-                  <img
-                    src="/images/linkedin.png"
-                    alt="LinkedIn"
-                    className="linkedin-icon"
-                  />
-                </a>
-              </div>
+      <a
+        href="https://www.linkedin.com/in/sudhin-suresh-b14682284/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="linkedin-icon-link"
+      >
+        <img src="/images/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
+      </a>
 
-              <p>Chief Marketing Officer</p>
-            </div>
+      <h3 className="founder-name">Sudhin Suresh</h3>
+      <p>Chief Marketing Officer</p>
+    </div>
 
-            <div className="founder-card">
-              <img
-                src="/images/rizwan.jpeg"
-                alt="Rizwan Shajahan"
-                className="founder-image"
-              />
+    <div className="founder-card">
+      <img
+        src="/images/rizwan.jpeg"
+        alt="Rizwan Shajahan"
+        className="founder-image"
+      />
 
-              <div className="founder-name-wrapper">
-                <h3 className="founder-name">Rizwan Shajahan</h3>
-                <a
-                  href="https://www.linkedin.com/in/rizwan-shajahan-766254255/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="linkedin-icon-link"
-                  aria-label="LinkedIn Profile"
-                >
-                  <img
-                    src="/images/linkedin.png"
-                    alt="LinkedIn"
-                    className="linkedin-icon"
-                    width="24"
-                    height="24"
-                  />
-                </a>
-              </div>
+      <a
+        href="https://www.linkedin.com/in/rizwan-shajahan-766254255/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="linkedin-icon-link"
+      >
+        <img src="/images/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
+      </a>
 
-              <p>Chief Technical Officer</p>
-            </div>
-          </div>
-        </section>
+      <h3 className="founder-name">Rizwan Shajahan</h3>
+      <p>Chief Technical Officer</p>
+    </div>
+    
+  </div>
+</section>
       </div>
       <Footer />
     </div>
