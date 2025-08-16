@@ -159,6 +159,10 @@ const CompanyPage = () => {
     className="founder-image"
   />
 
+  <h3 className="founder-name">Krishna Prasad S M</h3>
+  <p>Chief Executive Officer</p>
+
+  {/* LinkedIn icon now at the bottom */}
   <a
     href="https://www.linkedin.com/in/krishna-prasad63/"
     target="_blank"
@@ -167,10 +171,8 @@ const CompanyPage = () => {
   >
     <img src="/images/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
   </a>
-
-  <h3 className="founder-name">Krishna Prasad S M</h3>
-  <p>Chief Executive Officer</p>
 </div>
+
 
     <div className="founder-card">
       <img
@@ -179,6 +181,10 @@ const CompanyPage = () => {
         className="founder-image"
       />
 
+      
+
+      <h3 className="founder-name">Aashish S</h3>
+      <p>Chief Managing Director</p>
       <a
         href="https://www.linkedin.com/in/aashishs14/"
         target="_blank"
@@ -187,9 +193,6 @@ const CompanyPage = () => {
       >
         <img src="/images/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
       </a>
-
-      <h3 className="founder-name">Aashish S</h3>
-      <p>Chief Managing Director</p>
     </div>
 
     <div className="founder-card">
@@ -199,6 +202,10 @@ const CompanyPage = () => {
         className="founder-image"
       />
 
+      
+
+      <h3 className="founder-name">Sudhin Suresh</h3>
+      <p>Chief Marketing Officer</p>
       <a
         href="https://www.linkedin.com/in/sudhin-suresh-b14682284/"
         target="_blank"
@@ -207,9 +214,6 @@ const CompanyPage = () => {
       >
         <img src="/images/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
       </a>
-
-      <h3 className="founder-name">Sudhin Suresh</h3>
-      <p>Chief Marketing Officer</p>
     </div>
 
     <div className="founder-card">
@@ -219,6 +223,10 @@ const CompanyPage = () => {
         className="founder-image"
       />
 
+      
+
+      <h3 className="founder-name">Rizwan Shajahan</h3>
+      <p>Chief Technical Officer</p>
       <a
         href="https://www.linkedin.com/in/rizwan-shajahan-766254255/"
         target="_blank"
@@ -227,9 +235,6 @@ const CompanyPage = () => {
       >
         <img src="/images/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
       </a>
-
-      <h3 className="founder-name">Rizwan Shajahan</h3>
-      <p>Chief Technical Officer</p>
     </div>
     
   </div>

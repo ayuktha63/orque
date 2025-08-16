@@ -17,6 +17,11 @@
     height: auto;
     object-fit: contain;
 }
+.logo:hover {
+    transform: none !important;
+    transition: none !important;
+}
+
 .container {
     display: flex;
     gap: 50px;
