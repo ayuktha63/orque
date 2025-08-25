@@ -6,7 +6,7 @@ function Hero() {
     return (
         <section className="section1" id="Home" >
             <video autoPlay muted loop playsInline className="bg-video">
-                <source src="/images/orque.mp4" type="video/mp4" />
+                <source src="/images/orque.webm" type="video/webm" />
                 Your browser does not support the video tag.
             </video>
             <div className="overlay"></div>
