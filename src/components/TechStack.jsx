@@ -7,11 +7,11 @@ import '../styles/TechStack.css';
 
 function TechStack() {
     const techLogos = [
-        { src: '/images/flutter.webp', alt: 'Flutter' },
-        { src: '/images/firebase.webp', alt: 'Firebase' },
-        { src: '/images/python.webp', alt: 'Python' },
-        { src: '/images/figma.webp', alt: 'Figma' },
-        { src: '/images/tf.webp', alt: 'TensorFlow' }
+        { src: '/images/flutter.svg', alt: 'Flutter' },
+        { src: '/images/firebase.svg', alt: 'Firebase' },
+        { src: '/images/python1.svg', alt: 'Python'  },
+        { src: '/images/figma2.svg', alt: 'Figma' },
+        { src: '/images/tensor.svg', alt: 'TensorFlow' }
     ];
 
     return (
@@ -21,7 +21,7 @@ function TechStack() {
             {/* Desktop View */}
             <div className="icons-coll desktop-only">
                 {techLogos.map((logo, index) => (
-                    <img key={index} src={logo.src} alt={logo.alt} />
+                    <img key={index} src={logo.src} alt={logo.alt}   / >
                 ))}
             </div>
 

@@ -5,6 +5,11 @@
     align-items: center;
 }
 
+.large-logo {
+  width: 80px !important;
+  height: 80px !important;
+}
+
 .tech-banner h2 {
     color: #00204A;
     font-family: Inter;
