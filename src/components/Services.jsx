@@ -9,7 +9,7 @@ function Services() {
     };
 
     return (
-        <section className="section2" id="Services" data-aos="fade-up">
+        <section className="section2" id="Services" data-aos="fade-up" style={{ scrollMarginTop: '100px' }}>
             <div className="left-section2" data-aos="fade-up">
                 <h3>Creating What Comes Next</h3>
                 <p>
