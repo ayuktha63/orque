@@ -5,10 +5,13 @@
     display: flex;
     flex-direction: row;
     gap: 100px;
-    padding: 0 80px
-
+    padding: 0 80px;
 }
-
+.left-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Use a gap for consistent spacing between children */
+}
 .left-section2 h3 {
     padding-top: 100px;
     color: #00204A;
@@ -18,8 +21,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
-
 }
 
 .left-section2 p {
@@ -31,7 +32,6 @@
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.461px;
-
 }
 
 .right-section2 h2 {
@@ -44,23 +44,18 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
-
 }
 
 .right-section2 img {
     width: 360px;
     height: 440px;
     object-fit: cover;
-
-
 }
 
 .expanded-section {
     max-height: 404px;
     overflow-y: scroll;
     scrollbar-width: none;
-
 }
 
 .expanded-section::-webkit-scrollbar {
@@ -74,7 +69,6 @@
     color: #444;
     font-size: 16px;
     padding: 0 10px;
-
 }
 
 .accordion-content.open {
@@ -88,7 +82,6 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #ccc;
-
 }
 
 .sections h4 {
@@ -99,14 +92,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
 }
 
 .sections img {
     height: 20px;
     width: auto;
     cursor: pointer;
-
 }
 
 .sections img.rotated {
@@ -114,9 +105,12 @@
 }
 
 /* Tablet screens (481px to 1024px) */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1024px) {
+    .left-section2 {
+        gap: 15px; /* Adjust gap for tablet screens */
+    }
     .section2 {
-        margin: 0 80px;
+        padding: 0 40px;
         flex-direction: row;
         gap: 50px;
     }
@@ -124,22 +118,19 @@
         padding-top: 50px;
         font-size: 28px;
         height: 40px;
-
     }
     .left-section2 p {
         font-size: 14px;
         letter-spacing: 0.4px;
-
     }
     .right-section2 h2 {
         font-size: 32px;
         width: 100%;
         height: auto;
-
     }
     .right-section2 img {
         width: 300px;
-        height: 366px; /* Maintain aspect ratio (440/360 ≈ 1.222) */
+        height: 366px;
         object-fit: cover;
     }
     .expanded-section {
@@ -155,58 +146,49 @@
     .sections h4 {
         font-size: 24px;
         height: 40px;
-
     }
     .sections img {
         height: 18px;
     }
 }
 
-
-
-
-
-
-
-
 /* Mobile screens (up to 480px) */
 @media screen and (max-width: 480px) {
+    .left-section2 {
+        gap: 10px; /* Adjust gap for mobile screens */
+    }
     .section2 {
-        margin: 0 20px;
-
+        padding: 0 20px;
         flex-direction: column;
         gap: 30px;
     }
     .right-section2 {
-        order: -1; /* Move right-section2 (Our Services + photo) to top */
+        order: -1;
     }
     .left-section2 {
-        order: 0; /* Move left-section2 (Creating What Comes Next + accordion) below */
+        order: 0;
     }
     .left-section2 h3 {
         padding-top: 30px;
         font-size: 24px;
         height: 36px;
-
+        margin-bottom: 10px;
     }
     .left-section2 p {
         font-size: 12px;
         letter-spacing: 0.3px;
-
     }
     .right-section2 h2 {
         font-size: 28px;
         width: 100%;
         height: auto;
-
     }
     .right-section2 img {
         width: 100%;
         height: auto;
         max-width: 280px;
-        max-height: 342px; /* Maintain aspect ratio */
+        max-height: 342px;
         object-fit: cover;
-
     }
     .expanded-section {
         max-height: 250px;
@@ -221,7 +203,6 @@
     .sections h4 {
         font-size: 20px;
         height: 36px;
-
     }
     .sections img {
         height: 16px;
