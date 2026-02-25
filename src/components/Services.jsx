@@ -11,7 +11,7 @@ function Services() {
     return (
         <section className="section2" id="Services" data-aos="fade-up" style={{ scrollMarginTop: '100px' }}>
             <div className="left-section2" data-aos="fade-up">
-                <h3>Creating What Comes Next</h3>
+                <h3>Creating What Comes Nexts</h3>
                 <p>
                     Ready to transform your business with cutting-edge technology? We partner with
                     forward-thinking teams to design and deliver scalable digital solutions that solve
