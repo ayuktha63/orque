@@ -196,7 +196,7 @@ const CompanyPage = () => {
             </div>
 
 
-            <div className="founder-card">
+            {/*<div className="founder-card">
               <img
                 src="/images/rizwan.jpeg"
                 alt="Rizwan Shajahan"
@@ -216,7 +216,7 @@ const CompanyPage = () => {
                 <img src="/images/linkedin.png" alt="LinkedIn" className="linkedin-icon" />
               </a>
             </div>
-
+            */}
           </div>
         </section>
       </div>
